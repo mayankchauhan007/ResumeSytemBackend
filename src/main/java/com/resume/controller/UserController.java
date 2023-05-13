@@ -1,9 +1,9 @@
-package com.exam.controller;
+package com.resume.controller;
 
-import com.exam.model.Role;
-import com.exam.model.User;
-import com.exam.model.UserRole;
-import com.exam.service.UserService;
+import com.resume.model.Role;
+import com.resume.model.User;
+import com.resume.model.UserRole;
+import com.resume.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;

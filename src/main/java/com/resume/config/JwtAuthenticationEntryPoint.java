@@ -1,4 +1,4 @@
-package com.exam.config;
+package com.resume.config;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

@@ -1,12 +1,11 @@
-package com.exam.service.impl;
+package com.resume.service.impl;
 
-import com.exam.model.User;
-import com.exam.repo.UserRepository;
+import com.resume.model.User;
+import com.resume.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service

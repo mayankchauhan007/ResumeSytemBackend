@@ -1,10 +1,10 @@
-package com.exam.service.impl;
+package com.resume.service.impl;
 
-import com.exam.model.User;
-import com.exam.model.UserRole;
-import com.exam.repo.RoleRepository;
-import com.exam.repo.UserRepository;
-import com.exam.service.UserService;
+import com.resume.model.User;
+import com.resume.model.UserRole;
+import com.resume.repo.RoleRepository;
+import com.resume.repo.UserRepository;
+import com.resume.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

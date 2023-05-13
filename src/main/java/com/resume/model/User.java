@@ -1,4 +1,4 @@
-package com.exam.model;
+package com.resume.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

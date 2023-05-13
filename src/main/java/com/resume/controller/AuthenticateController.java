@@ -1,10 +1,10 @@
-package com.exam.controller;
+package com.resume.controller;
 
-import com.exam.config.JwtUtils;
-import com.exam.model.JwtRequest;
-import com.exam.model.JwtResponse;
-import com.exam.model.User;
-import com.exam.service.impl.UserDetailsServiceImpl;
+import com.resume.config.JwtUtils;
+import com.resume.model.JwtRequest;
+import com.resume.model.JwtResponse;
+import com.resume.model.User;
+import com.resume.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
