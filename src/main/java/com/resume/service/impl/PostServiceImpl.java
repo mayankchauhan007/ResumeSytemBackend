@@ -13,7 +13,6 @@ public class PostServiceImpl implements PostService {
 
     private final PostRepository postRepository;
 
-    @Autowired
     public PostServiceImpl(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
@@ -35,8 +34,13 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Post updatePost(Long id, Post post) {
-        post.setId(id);
-        return postRepository.save(post);
+        Post existingPost = postRepository.findById(id).orElse(null);
+        if (existingPost != null) {
+            existingPost.setTitle(post.getTitle());
+            existingPost.setDescription(post.getDescription());
+            return postRepository.save(existingPost);
+        }
+        return null;
     }
 
     @Override

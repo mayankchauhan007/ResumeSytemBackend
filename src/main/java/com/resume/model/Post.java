@@ -2,7 +2,6 @@ package com.resume.model;
 
 import javax.persistence.*;
 import org.springframework.web.multipart.MultipartFile;
-
 @Entity
 @Table(name = "posts")
 public class Post {
@@ -15,18 +14,17 @@ public class Post {
     @Column(length = 1000)
     private String description;
 
-    @Transient
-    private MultipartFile imageFile;
+    // Constructors, getters, and setters
 
     public Post() {
     }
 
-    public Post(Long id, String title, String description, MultipartFile imageFile) {
-        this.id = id;
+    public Post(String title, String description) {
         this.title = title;
         this.description = description;
-        this.imageFile = imageFile;
     }
+
+    // Getters and Setters
 
     public Long getId() {
         return id;
@@ -51,14 +49,4 @@ public class Post {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public MultipartFile getImageFile() {
-        return imageFile;
-    }
-
-    public void setImageFile(MultipartFile imageFile) {
-        this.imageFile = imageFile;
-    }
-    // Constructors, getters, and setters
-    // ...
 }
